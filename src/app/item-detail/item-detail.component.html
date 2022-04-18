@@ -1,0 +1,20 @@
+<div *ngIf="item">
+
+  <h2>Event Details</h2>
+  <div>
+    <span>id: </span>{{item.id}}<br>
+    <span>Date: </span>{{item.date}}<br>
+    <span>Time: </span>{{item.time}}<br>
+    <span>Command Code: </span>{{item.command}}<br>
+    <span>Image URL: </span>{{item.image_url}}<br>
+  </div>
+  <div>
+    <label for="item-state">State: </label>
+    <input id="item-state" [(ngModel)]="item.state" placeholder="state">
+  </div>
+  <div>
+    <span>Image:</span><br>
+    <img src={{item.image_url}} alt="Image">
+  </div>
+
+</div>
